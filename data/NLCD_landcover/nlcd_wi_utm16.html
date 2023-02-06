@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>4589ef060b354f6eb83ad1bef48bc20c</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata> <idinfo> <citation> <citeinfo> <origin>U.S. Geological Survey</origin> <origin>Jon Dewitz</origin> <pubdate>20210604</pubdate>
+<title>
+National Land Cover Database (NLCD) 2019 Land Cover Conterminous United States
+</title>
+<pre><code>    &lt;geoform&gt;remote-sensing image&lt;/geoform&gt;
+    &lt;serinfo&gt;
+      &lt;sername&gt;None&lt;/sername&gt;
+      &lt;issue&gt;None&lt;/issue&gt;
+    &lt;/serinfo&gt;
+    &lt;pubinfo&gt;
+      &lt;pubplace&gt;Sioux Falls, SD&lt;/pubplace&gt;
+      &lt;publish&gt;U.S. Geological Survey&lt;/publish&gt;
+    &lt;/pubinfo&gt;
+    &lt;onlink&gt;https://doi.org/10.5066/P9KZCM54&lt;/onlink&gt;
+    &lt;onlink&gt;https://www.mrlc.gov/data&lt;/onlink&gt;
+    &lt;onlink&gt;https://www.mrlc.gov/data-services-page&lt;/onlink&gt;
+    &lt;lworkcit&gt;
+      &lt;citeinfo&gt;
+        &lt;origin&gt;Yang, L., et al.&lt;/origin&gt;
+        &lt;pubdate&gt;201812&lt;/pubdate&gt;
+        &lt;title&gt;A new generation of the United States National Land Cover Database: Requirements, research priorities, design, and implementation strategies&lt;/title&gt;
+        &lt;edition&gt;ISPRS Journal of Photogrammetry and Remote Sensing 146: 108-123.&lt;/edition&gt;
+        &lt;geoform&gt;publication&lt;/geoform&gt;
+        &lt;onlink&gt;https://doi.org/10.1016/j.isprsjprs.2018.09.006&lt;/onlink&gt;
+      &lt;/citeinfo&gt;
+    &lt;/lworkcit&gt;
+  &lt;/citeinfo&gt;
+&lt;/citation&gt;
+&lt;descript&gt;
+  &lt;abstract&gt;The U.S. Geological Survey (USGS), in partnership with several federal agencies, has developed and released five National Land Cover Database (NLCD) products over the past two decades: NLCD 1992, 2001, 2006, 2011, and 2016.  The 2016 release saw landcover created for additional years of 2003, 2008, and 2013. These products provide spatially explicit and reliable information on the Nation’s land cover and land cover change. To continue the legacy of NLCD and further establish a long-term monitoring capability for the Nation’s land resources, the USGS has designed a new generation of NLCD products named NLCD 2019. The NLCD 2019 design aims to provide innovative, consistent, and robust methodologies for production of a multi-temporal land cover and land cover change database from 2001 to 2019 at 2–3-year intervals. Comprehensive research was conducted and resulted in developed strategies for NLCD 2019: continued integration between impervious surface and all landcover products with impervious surface being directly mapped as developed classes in the landcover, a streamlined compositing process for assembling and preprocessing based on Landsat imagery and geospatial ancillary datasets; a multi-source integrated training data development and decision-tree based land cover classifications; a temporally, spectrally, and spatially integrated land cover change analysis strategy; a hierarchical theme-based post-classification and integration protocol for generating land cover and change products; a continuous fields biophysical parameters modeling method; and an automated scripted operational system for the NLCD 2019 production. The performance of the developed strategies and methods were tested in twenty composite referenced areas throughout the conterminous U.S. An overall accuracy assessment from the 2016 publication give a 91% overall landcover accuracy, with the developed classes also showing a 91% accuracy in overall developed.  Results from this study confirm the robustness of this comprehensive and highly automated procedure for NLCD 2019 operational mapping. Questions about the NLCD 2019 land cover product can be directed to the NLCD 2019 land cover mapping team at USGS EROS, Sioux Falls, SD (605) 594-6151 or <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f39e819f90b386809480dd949c85dd">[email&#160;protected]</a> See included spatial metadata for more details. &lt;/abstract&gt;
+  &lt;purpose&gt;The goal of this project is to provide the Nation with complete, current, and consistent public domain information on its land use and land cover.&lt;/purpose&gt;
+  &lt;supplinf&gt;Corner Coordinates (center of pixel, projection meters)</code></pre>
+Upper Left Corner: -2493045 meters(X), 3310005 meters(Y) Lower Right Corner: 2342655 meters(X), 177285 meters(Y)</supplinf> </descript> <timeperd> <timeinfo> <rngdates> <begdate>2001</begdate> <enddate>2019</enddate> </rngdates> </timeinfo> <current>ground condition</current> </timeperd> <status> <progress>In work</progress> <update>Every 2-3 years</update> </status> <spdom> <bounding> <westbc>-130.2328</westbc> <eastbc>-63.6722</eastbc> <northbc>52.8510</northbc> <southbc>21.7423</southbc> </bounding> </spdom> <keywords> <theme> <themekt>ISO 19115 Topic Category</themekt> <themekey>imageryBaseMapsEarthCover</themekey> <themekey>biota</themekey> </theme> <theme> <themekt>NGDA Portfolio Themes</themekt> <themekey>NGDA</themekey> <themekey>National Geospatial Data Asset</themekey> <themekey>Land Use Land Cover Theme</themekey> </theme> <theme> <themekt>USGS Thesaurus</themekt> <themekey>Land cover</themekey> <themekey>Image processing</themekey> <themekey>GIS</themekey> <themekey>U.S. Geological Survey (USGS)</themekey> <themekey>digital spatial data</themekey> </theme> <theme> <themekt>U.S. Department of Commerce, 1995, (Countries, dependencies, areas of special sovereignty, and their principal administrative divisions, Federal Information Processing Standard 10-4): Washington, D.C., National Institute of Standards and Technology</themekt> <themekey>United States</themekey> <themekey>U.S.</themekey> <themekey>US</themekey> </theme> <place> <placekt>Common Geographic Areas</placekt> <placekey>United States</placekey> </place> </keywords> <accconst>None. Please see ‘Distribution Info’ for details.</accconst> <useconst>None. Users are advised to read the dataset’s metadata thoroughly to understand appropriate use and data limitations.</useconst> <ptcontac> <cntinfo> <cntorgp> <cntorg>U.S. Geological Survey</cntorg> </cntorgp> <cntpos>Customer Service Representative</cntpos> <cntaddr> <addrtype>mailing and physical</addrtype>
+<address>
+47914 252nd Street
+</address>
+<pre><code>      &lt;city&gt;Sioux Falls&lt;/city&gt;
+      &lt;state&gt;SD&lt;/state&gt;
+      &lt;postal&gt;57198-0001&lt;/postal&gt;
+      &lt;country&gt;USA&lt;/country&gt;
+    &lt;/cntaddr&gt;
+    &lt;cntvoice&gt;(605) 594-6151&lt;/cntvoice&gt;
+    &lt;cntemail&gt;<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6a091f191e190f181c2a1f190d19440d051c">[email&#160;protected]</a>&lt;/cntemail&gt;
+  &lt;/cntinfo&gt;
+&lt;/ptcontac&gt;
+&lt;datacred&gt;U.S. Geological Survey&lt;/datacred&gt;
+&lt;secinfo&gt;
+  &lt;secsys&gt;None&lt;/secsys&gt;
+  &lt;secclass&gt;Unclassified&lt;/secclass&gt;
+  &lt;sechandl&gt;N/A&lt;/sechandl&gt;
+&lt;/secinfo&gt;
+&lt;native&gt;Microsoft Windows 10; ESRI ArcCatalog 10.5.1, ERDAS Imagine (alternative)&lt;/native&gt;</code></pre>
+</idinfo> <dataqual> <attracc> <attraccr>A formal accuracy assessment has not been conducted for NLCD 2019 Land Cover, NLCD 2019 Land Cover Change, or NLCD 2019 Impervious Surface products. A 2016 accuracy assessment publication can be found here: James Wickham, Stephen V. Stehman, Daniel G. Sorenson, Leila Gass, Jon A. Dewitz., Thematic accuracy assessment of the NLCD 2016 land cover for the conterminous United States: Remote Sensing of Environment, Volume 257, 2021, 112357, ISSN 0034-4257, https://doi.org/10.1016/j.rse.2021.112357. </attraccr> <qattracc> <attraccv>Unknown</attraccv> <attracce>This document and the described land cover map are considered “provisional” until a formal accuracy assessment is completed. The U.S. Geological Survey can make no guarantee as to the accuracy or completeness of this information, and it is provided with the understanding that it is not guaranteed to be correct or complete. Conclusions drawn from this information are the responsibility of the user.</attracce> </qattracc> </attracc> <logic>See https://www.mrlc.gov/data for the full list of products available.</logic> <complete>This NLCD product is the version dated June 4, 2021.</complete> <posacc> <horizpa> <horizpar>N/A</horizpar> </horizpa> <vertacc> <vertaccr>N/A</vertaccr> </vertacc> </posacc> <lineage> <srcinfo> <srccite> <citeinfo> <origin>U.S. Geological Survey</origin> <pubdate>20200408</pubdate>
+<title>
+Landsat—Earth Observation Satellites
+</title>
+<pre><code>        &lt;geoform&gt;publication&lt;/geoform&gt;
+        &lt;othercit&gt;https://www.usgs.gov/core-science-systems/nli/landsat/landsat-5?qt-science_support_page_related_con=0#qt-science_support_page_related_con</code></pre>
+</othercit> <onlink>https://doi.org/10.3133/fs20153081</onlink> </citeinfo> </srccite> <typesrc>Digital and/or Hardcopy</typesrc> <srctime> <timeinfo> <rngdates> <begdate>1984</begdate> <enddate>2013</enddate> </rngdates> </timeinfo> <srccurr>ground condition</srccurr> </srctime> <srccitea>Landsat TM</srccitea> <srccontr>Landsat Thematic Mapper (TM) </srccontr> </srcinfo> <srcinfo> <srccite> <citeinfo> <origin>U.S. Geological Survey</origin> <origin>Jon Dewitz</origin> <pubdate>201901</pubdate>
+<title>
+NLCD 2016 Land Cover Conterminous United States
+</title>
+<pre><code>        &lt;geoform&gt;raster digital data&lt;/geoform&gt;
+        &lt;othercit&gt;Yang, L., et al. (2018). &quot;A new generation of the United States National Land Cover Database: Requirements, research priorities, design, and implementation strategies.&quot; ISPRS Journal of Photogrammetry and Remote Sensing 146: 108-123.</code></pre>
+</othercit> <onlink>https://doi.org/10.5066/P96HHBIE</onlink> </citeinfo> </srccite> <typesrc>Digital and/or Hardcopy</typesrc> <srctime> <timeinfo> <rngdates> <begdate>2001</begdate> <enddate>2016</enddate> </rngdates> </timeinfo> <srccurr>ground condition</srccurr> </srctime> <srccitea>DEM</srccitea> <srccontr>Digital Elevation Module (DEM) </srccontr> </srcinfo> <srcinfo> <srccite> <citeinfo> <origin>Julia A. Barsi</origin> <origin>Brian L. Markham</origin> <origin>Jeffrey S. Czapla-Myers</origin> <origin>Dennis L. Helder</origin> <origin>Simon J. Hook</origin> <origin>John R. Schott</origin> <origin>Md. Obaidul Haque</origin> <pubdate>20160919</pubdate>
+<title>
+Landsat-7 ETM+ radiometric calibration status
+</title>
+<pre><code>        &lt;geoform&gt;publication&lt;/geoform&gt;
+        &lt;othercit&gt;https://www.usgs.gov/core-science-systems/nli/landsat/landsat-7?qt-science_support_page_related_con=0#qt-science_support_page_related_con</code></pre>
+</othercit> <onlink>https://doi.org/10.1117/12.2238625</onlink> </citeinfo> </srccite> <typesrc>Digital and/or Hardcopy</typesrc> <srctime> <timeinfo> <rngdates> <begdate>1999</begdate> <enddate>2020</enddate> </rngdates> </timeinfo> <srccurr>ground condition</srccurr> </srctime> <srccitea>Landsat ETM+</srccitea> <srccontr>Landsat Enhanced Thematic Mapper Plus (ETM+)</srccontr> </srcinfo> <srcinfo> <srccite> <citeinfo> <origin>Cody Anderson</origin> <origin>Dennis Helder</origin> <origin>Drake Jeno</origin> <pubdate>2017</pubdate>
+<title>
+Statistical relative gain calculation for Landsat 8
+</title>
+<pre><code>        &lt;geoform&gt;publication&lt;/geoform&gt;
+        &lt;othercit&gt;https://www.usgs.gov/core-science-systems/nli/landsat/landsat-8?qt-science_support_page_related_con=0#qt-science_support_page_related_con</code></pre>
+</othercit> </citeinfo> </srccite> <typesrc>Digital and/or Hardcopy</typesrc> <srctime> <timeinfo> <rngdates> <begdate>2013</begdate> <enddate>2020</enddate> </rngdates> </timeinfo> <srccurr>ground condition</srccurr> </srctime> <srccitea>Landsat OLI</srccitea> <srccontr>Landsat Operational Land Imager (OLI)</srccontr> </srcinfo> <srcinfo> <srccite> <citeinfo> <origin>Julia A. Barsi</origin> <origin>Brian L. Markham</origin> <origin>Matthew Montanaro</origin> <origin>Aaron Gerace</origin> <origin>Simon Hook</origin> <origin>John R. Schott</origin> <origin>Nina G. Raqueno</origin> <origin>Ron Morfitt</origin> <pubdate>2017</pubdate>
+<title>
+Landsat-8 TIRS thermal radiometric calibration status
+</title>
+<pre><code>        &lt;geoform&gt;publication&lt;/geoform&gt;
+        &lt;othercit&gt;https://www.usgs.gov/core-science-systems/nli/landsat/landsat-8?qt-science_support_page_related_con=0#qt-science_support_page_related_con</code></pre>
+</othercit> <onlink>https://doi.org/10.1117/12.2276045</onlink> </citeinfo> </srccite> <typesrc>Digital and/or Hardcopy</typesrc> <srctime> <timeinfo> <rngdates> <begdate>2013</begdate> <enddate>2020</enddate> </rngdates> </timeinfo> <srccurr>ground condition</srccurr> </srctime> <srccitea>Landsat TIRS</srccitea> <srccontr>Landsat Thermal Infrared Sensor (TIRS)</srccontr> </srcinfo> <srcinfo> <srccite> <citeinfo> <origin>U.S. Geological Survey</origin> <pubdate>20200408</pubdate>
+<title>
+Landsat—Earth Observation Satellites
+</title>
+<pre><code>        &lt;geoform&gt;publication&lt;/geoform&gt;
+        &lt;othercit&gt;https://www.usgs.gov/core-science-systems/nli/landsat/landsat-5?qt-science_support_page_related_con=0#qt-science_support_page_related_con</code></pre>
+</othercit> <onlink>https://doi.org/10.3133/fs20153081</onlink> </citeinfo> </srccite> <typesrc>Digital and/or Hardcopy</typesrc> <srctime> <timeinfo> <rngdates> <begdate>1984</begdate> <enddate>2013</enddate> </rngdates> </timeinfo> <srccurr>ground condition</srccurr> </srctime> <srccitea>Landsat MSS</srccitea> <srccontr>Landsat Multispectral Scanner (MSS)</srccontr> </srcinfo> <srcinfo> <srccite> <citeinfo> <origin>U.S. Geological Survey</origin> <origin>Jon Dewitz</origin> <pubdate>201901</pubdate>
+<title>
+NLCD 2016 Land Cover Conterminous United States
+</title>
+<pre><code>        &lt;geoform&gt;raster digital data&lt;/geoform&gt;
+        &lt;othercit&gt;Yang, L., et al. (2018). &quot;A new generation of the United States National Land Cover Database: Requirements, research priorities, design, and implementation strategies.&quot; ISPRS Journal of Photogrammetry and Remote Sensing 146: 108-123.</code></pre>
+</othercit> <onlink>https://doi.org/10.5066/P96HHBIE</onlink> </citeinfo> </srccite> <typesrc>Digital and/or Hardcopy</typesrc> <srctime> <timeinfo> <rngdates> <begdate>2001</begdate> <enddate>2016</enddate> </rngdates> </timeinfo> <srccurr>ground condition</srccurr> </srctime> <srccitea>USGS National Land Cover Database</srccitea> <srccontr>United States Geological Survey (USGS) National Land Cover Database (NLCD)</srccontr> </srcinfo> <srcinfo> <srccite> <citeinfo> <origin>John L. Dwyer</origin> <origin>David P. Roy</origin> <origin>Brian Sauer</origin> <origin>Calli B. Jenkerson</origin> <origin>Hankaui K. Zhang</origin> <origin>Leo Lymburner</origin> <pubdate>20180828</pubdate>
+<title>
+Analysis Ready Data: Enabling Analysis of the Landsat Archive
+</title>
+<pre><code>        &lt;geoform&gt;publication&lt;/geoform&gt;
+        &lt;othercit&gt;https://www.usgs.gov/core-science-systems/nli/landsat/us-landsat-analysis-ready-data?qt-science_support_page_related_con=0#qt-science_support_page_related_con</code></pre>
+</othercit> <onlink>https://doi.org/10.3390/rs10091363</onlink> </citeinfo> </srccite> <typesrc>Digital and/or Hardcopy</typesrc> <srctime> <timeinfo> <sngdate> <caldate>2018</caldate> </sngdate> </timeinfo> <srccurr>ground condition</srccurr> </srctime> <srccitea>Landsat ARD</srccitea> <srccontr>Landsat Analysis Ready Data (ARD)</srccontr> </srcinfo> <srcinfo> <srccite> <citeinfo> <origin>U.S. Geological Survey</origin> <pubdate>2019</pubdate>
+<title>
+USGS High Performance Computing (HPC) Denali system
+</title>
+<pre><code>        &lt;geoform&gt;application/service&lt;/geoform&gt;
+        &lt;onlink&gt;https://www.usgs.gov/center-news/denali-tallgrass-eros-launch-new-era-high-performance-computing-capabilities&lt;/onlink&gt;
+      &lt;/citeinfo&gt;
+    &lt;/srccite&gt;
+    &lt;typesrc&gt;Digital and/or Hardcopy&lt;/typesrc&gt;
+    &lt;srctime&gt;
+      &lt;timeinfo&gt;
+        &lt;sngdate&gt;
+          &lt;caldate&gt;2019&lt;/caldate&gt;
+        &lt;/sngdate&gt;
+      &lt;/timeinfo&gt;
+      &lt;srccurr&gt;observed&lt;/srccurr&gt;
+    &lt;/srctime&gt;
+    &lt;srccitea&gt;USGS High Performance Computing (HPC) Denali system&lt;/srccitea&gt;
+    &lt;srccontr&gt;Two new high-performance computing (HPC) options—Denali and Tallgrass. &lt;/srccontr&gt;
+  &lt;/srcinfo&gt;
+  &lt;srcinfo&gt;
+    &lt;srccite&gt;
+      &lt;citeinfo&gt;
+        &lt;origin&gt;Google&lt;/origin&gt;
+        &lt;pubdate&gt;2019&lt;/pubdate&gt;
+        &lt;title&gt;Google Earth Engine&lt;/title&gt;
+        &lt;geoform&gt;raster digital data&lt;/geoform&gt;
+        &lt;onlink&gt;https://earthengine.google.com/&lt;/onlink&gt;
+      &lt;/citeinfo&gt;
+    &lt;/srccite&gt;
+    &lt;typesrc&gt;Digital and/or Hardcopy&lt;/typesrc&gt;
+    &lt;srctime&gt;
+      &lt;timeinfo&gt;
+        &lt;sngdate&gt;
+          &lt;caldate&gt;2019&lt;/caldate&gt;
+        &lt;/sngdate&gt;
+      &lt;/timeinfo&gt;
+      &lt;srccurr&gt;observed&lt;/srccurr&gt;
+    &lt;/srctime&gt;
+    &lt;srccitea&gt;Google Earth Engine (GEE)&lt;/srccitea&gt;
+    &lt;srccontr&gt;Google Earth Engine combines a multi-petabyte catalog of satellite imagery and geospatial datasets with planetary-scale analysis capabilities and makes it available for scientists, researchers, and developers to detect changes, map trends, and quantify differences on the Earth&#39;s surface.&lt;/srccontr&gt;
+  &lt;/srcinfo&gt;
+  &lt;srcinfo&gt;
+    &lt;srccite&gt;
+      &lt;citeinfo&gt;
+        &lt;origin&gt;U.S. Geological Survey (USGS) National Geospatial Program&lt;/origin&gt;
+        &lt;pubdate&gt;2020&lt;/pubdate&gt;
+        &lt;title&gt;The 3D Elevation Program&lt;/title&gt;
+        &lt;geoform&gt;raster digital data&lt;/geoform&gt;
+        &lt;othercit&gt;https://viewer.nationalmap.gov/basic/&lt;/othercit&gt;
+        &lt;onlink&gt;https://www.usgs.gov/core-science-systems/ngp/3dep&lt;/onlink&gt;
+      &lt;/citeinfo&gt;
+    &lt;/srccite&gt;
+    &lt;typesrc&gt;Digital and/or Hardcopy&lt;/typesrc&gt;
+    &lt;srctime&gt;
+      &lt;timeinfo&gt;
+        &lt;rngdates&gt;
+          &lt;begdate&gt;2019&lt;/begdate&gt;
+          &lt;enddate&gt;2019&lt;/enddate&gt;
+        &lt;/rngdates&gt;
+      &lt;/timeinfo&gt;
+      &lt;srccurr&gt;observed&lt;/srccurr&gt;
+    &lt;/srctime&gt;
+    &lt;srccitea&gt;3D Elevation Program (3DEP) digital elevation data&lt;/srccitea&gt;
+    &lt;srccontr&gt;The 3D Elevation Program is managed by the U.S. Geological Survey (USGS) National Geospatial Program to respond to growing needs for high-quality topographic data and for a wide range of other three-dimensional (3D) representations of the Nation&#39;s natural and constructed features.&lt;/srccontr&gt;
+  &lt;/srcinfo&gt;
+  &lt;srcinfo&gt;
+    &lt;srccite&gt;
+      &lt;citeinfo&gt;
+        &lt;origin&gt;U.S. Department of Agriculture (USDA) National Agricultural Statistics Service (NASS)&lt;/origin&gt;
+        &lt;pubdate&gt;2017&lt;/pubdate&gt;
+        &lt;title&gt;Cropland Data Layer&lt;/title&gt;
+        &lt;geoform&gt;raster digital data&lt;/geoform&gt;
+        &lt;othercit&gt;https://nassgeodata.gmu.edu/CropScape/&lt;/othercit&gt;
+        &lt;onlink&gt;https://www.nass.usda.gov/Research_and_Science/Cropland/SARS1a.php&lt;/onlink&gt;
+      &lt;/citeinfo&gt;
+    &lt;/srccite&gt;
+    &lt;typesrc&gt;Digital and/or Hardcopy&lt;/typesrc&gt;
+    &lt;srctime&gt;
+      &lt;timeinfo&gt;
+        &lt;rngdates&gt;
+          &lt;begdate&gt;2008&lt;/begdate&gt;
+          &lt;enddate&gt;2017&lt;/enddate&gt;
+        &lt;/rngdates&gt;
+      &lt;/timeinfo&gt;
+      &lt;srccurr&gt;observed&lt;/srccurr&gt;
+    &lt;/srctime&gt;
+    &lt;srccitea&gt;Cropland Data Layer (CDL)&lt;/srccitea&gt;
+    &lt;srccontr&gt;Data on cultivated crops and confidence indices, available annually for 2008 to 2017 from the U.S. Department of Agriculture (USDA) National Agricultural Statistics Service (NASS).&lt;/srccontr&gt;
+  &lt;/srcinfo&gt;
+  &lt;srcinfo&gt;
+    &lt;srccite&gt;
+      &lt;citeinfo&gt;
+        &lt;origin&gt;U.S. Fish and Wildlife Service&lt;/origin&gt;
+        &lt;pubdate&gt;2021&lt;/pubdate&gt;
+        &lt;title&gt;National Wetlands Inventory&lt;/title&gt;
+        &lt;geoform&gt;vector digital data&lt;/geoform&gt;
+        &lt;othercit&gt;https://www.fws.gov/wetlands/Data/Web-Map-Services.html&lt;/othercit&gt;
+        &lt;onlink&gt;https://www.fws.gov/wetlands/Data/Data-Download.html&lt;/onlink&gt;
+      &lt;/citeinfo&gt;
+    &lt;/srccite&gt;
+    &lt;typesrc&gt;Digital and/or Hardcopy&lt;/typesrc&gt;
+    &lt;srctime&gt;
+      &lt;timeinfo&gt;
+        &lt;rngdates&gt;
+          &lt;begdate&gt;1977&lt;/begdate&gt;
+          &lt;enddate&gt;2021&lt;/enddate&gt;
+        &lt;/rngdates&gt;
+      &lt;/timeinfo&gt;
+      &lt;srccurr&gt;observed&lt;/srccurr&gt;
+    &lt;/srctime&gt;
+    &lt;srccitea&gt;National Wetlands Inventory (NWI)&lt;/srccitea&gt;
+    &lt;srccontr&gt;The U.S. Fish and Wildlife Service&#39;s National Wetlands Inventory (NWI) provides detailed information on the abundance, characteristics, and distribution of wetlands in the United States.&lt;/srccontr&gt;
+  &lt;/srcinfo&gt;
+  &lt;srcinfo&gt;
+    &lt;srccite&gt;
+      &lt;citeinfo&gt;
+        &lt;origin&gt;National Cooperative Soil Survey&lt;/origin&gt;
+        &lt;pubdate&gt;2019&lt;/pubdate&gt;
+        &lt;title&gt;Soil Survey Geographic (SSURGO) Database&lt;/title&gt;
+        &lt;geoform&gt;vector digital data&lt;/geoform&gt;
+        &lt;onlink&gt;https://gdg.sc.egov.usda.gov/&lt;/onlink&gt;
+      &lt;/citeinfo&gt;
+    &lt;/srccite&gt;
+    &lt;typesrc&gt;Digital and/or Hardcopy&lt;/typesrc&gt;
+    &lt;srctime&gt;
+      &lt;timeinfo&gt;
+        &lt;sngdate&gt;
+          &lt;caldate&gt;2019&lt;/caldate&gt;
+        &lt;/sngdate&gt;
+      &lt;/timeinfo&gt;
+      &lt;srccurr&gt;observed&lt;/srccurr&gt;
+    &lt;/srctime&gt;
+    &lt;srccitea&gt;Soil Survey Geographic (SSURGO) Database&lt;/srccitea&gt;
+    &lt;srccontr&gt;The SSURGO database contains information about soil as collected by the National Cooperative Soil Survey. The information was collected in map units at scales ranging from 1:12,000 to 1:63,360. SSURGO datasets consist of map data, tabular data, and information about how the maps and tables were created. &lt;/srccontr&gt;
+  &lt;/srcinfo&gt;
+  &lt;srcinfo&gt;
+    &lt;srccite&gt;
+      &lt;citeinfo&gt;
+        &lt;origin&gt;USDA Natural Resources Conservation Service (NRCS)&lt;/origin&gt;
+        &lt;pubdate&gt;2019&lt;/pubdate&gt;
+        &lt;title&gt;State Soil Geographic (STATSGO2) Database&lt;/title&gt;
+        &lt;geoform&gt;vector digital data&lt;/geoform&gt;
+        &lt;onlink&gt;https://websoilsurvey.sc.egov.usda.gov/App/HomePage.htm&lt;/onlink&gt;
+      &lt;/citeinfo&gt;
+    &lt;/srccite&gt;
+    &lt;typesrc&gt;Digital and/or Hardcopy&lt;/typesrc&gt;
+    &lt;srctime&gt;
+      &lt;timeinfo&gt;
+        &lt;sngdate&gt;
+          &lt;caldate&gt;2019&lt;/caldate&gt;
+        &lt;/sngdate&gt;
+      &lt;/timeinfo&gt;
+      &lt;srccurr&gt;observed&lt;/srccurr&gt;
+    &lt;/srctime&gt;
+    &lt;srccitea&gt;State Soil Geographic (STATSGO2) Database&lt;/srccitea&gt;
+    &lt;srccontr&gt;The USDA Natural Resources Conservation Service (NRCS) STATSGO2 database is a broad-based inventory of soils and non-soil areas, and is designed for broad planning and management uses covering state, regional, and multi-state areas.&lt;/srccontr&gt;
+  &lt;/srcinfo&gt;
+  &lt;srcinfo&gt;
+    &lt;srccite&gt;
+      &lt;citeinfo&gt;
+        &lt;origin&gt;U.S. Geological Survey&lt;/origin&gt;
+        &lt;pubdate&gt;2019&lt;/pubdate&gt;
+        &lt;title&gt;Multi-Index Integrated Change Analysis (MIICA)&lt;/title&gt;
+        &lt;geoform&gt;application/service&lt;/geoform&gt;
+        &lt;othercit&gt;Jin, Suming &amp;amp; Yang, Limin &amp;amp; Xian, G. &amp;amp; Danielson, P. &amp;amp; Homer, Collin. (2010). A Multi-Index Integrated Change Detection Method for Updating the National Land Cover Database. AGU Fall Meeting Abstracts. &lt;/othercit&gt;
+      &lt;/citeinfo&gt;
+    &lt;/srccite&gt;
+    &lt;typesrc&gt;Digital and/or Hardcopy&lt;/typesrc&gt;
+    &lt;srctime&gt;
+      &lt;timeinfo&gt;
+        &lt;rngdates&gt;
+          &lt;begdate&gt;2001&lt;/begdate&gt;
+          &lt;enddate&gt;2019&lt;/enddate&gt;
+        &lt;/rngdates&gt;
+      &lt;/timeinfo&gt;
+      &lt;srccurr&gt;observed&lt;/srccurr&gt;
+    &lt;/srctime&gt;
+    &lt;srccitea&gt;Multi-Index Integrated Change Analysis (MIICA)&lt;/srccitea&gt;
+    &lt;srccontr&gt;To improve the NLCD 2006 operational process, we developed a Multi-Index Integrated Change Analysis (MIICA) method at the laterstage of the NLCD 2006 project to alleviate commission and omission errors by using four spectral indices that complement each other. In addition to change location, the MIICA also generates change direction information. &lt;/srccontr&gt;
+  &lt;/srcinfo&gt;
+  &lt;srcinfo&gt;
+    &lt;srccite&gt;
+      &lt;citeinfo&gt;
+        &lt;origin&gt;USDA Forest Service&lt;/origin&gt;
+        &lt;pubdate&gt;2019&lt;/pubdate&gt;
+        &lt;title&gt;Vegetation Change Tracker (VCT) software &lt;/title&gt;
+        &lt;geoform&gt;application/service&lt;/geoform&gt;
+        &lt;onlink&gt;https://doi.org/10.1016/j.rse.2018.11.029&lt;/onlink&gt;
+      &lt;/citeinfo&gt;
+    &lt;/srccite&gt;
+    &lt;typesrc&gt;Digital and/or Hardcopy&lt;/typesrc&gt;
+    &lt;srctime&gt;
+      &lt;timeinfo&gt;
+        &lt;rngdates&gt;
+          &lt;begdate&gt;1986&lt;/begdate&gt;
+          &lt;enddate&gt;2008&lt;/enddate&gt;
+        &lt;/rngdates&gt;
+      &lt;/timeinfo&gt;
+      &lt;srccurr&gt;observed&lt;/srccurr&gt;
+    &lt;/srctime&gt;
+    &lt;srccitea&gt;Vegetation Change Tracker (VCT)&lt;/srccitea&gt;
+    &lt;srccontr&gt;Disturbance and regrowth are vital processes in determining the roles of forest ecosystem in the carbon and biogeochemical cycles. Using time series observations, the vegetation change tracker (VCT) algorithm was designed to map the location, timing, and spectral magnitudes of forest disturbance events. &lt;/srccontr&gt;
+  &lt;/srcinfo&gt;
+  &lt;srcinfo&gt;
+    &lt;srccite&gt;
+      &lt;citeinfo&gt;
+        &lt;origin&gt;NOAA Office for Coastal Management&lt;/origin&gt;
+        &lt;pubdate&gt;2019&lt;/pubdate&gt;
+        &lt;title&gt;Coastal Change Analysis Program (C-CAP)&lt;/title&gt;
+        &lt;geoform&gt;application/service&lt;/geoform&gt;
+        &lt;onlink&gt;https://coast.noaa.gov/digitalcoast/tools/lca.html&lt;/onlink&gt;
+      &lt;/citeinfo&gt;
+    &lt;/srccite&gt;
+    &lt;typesrc&gt;Digital and/or Hardcopy&lt;/typesrc&gt;
+    &lt;srctime&gt;
+      &lt;timeinfo&gt;
+        &lt;sngdate&gt;
+          &lt;caldate&gt;2019&lt;/caldate&gt;
+        &lt;/sngdate&gt;
+      &lt;/timeinfo&gt;
+      &lt;srccurr&gt;observed&lt;/srccurr&gt;
+    &lt;/srctime&gt;
+    &lt;srccitea&gt;C-CAP land cover&lt;/srccitea&gt;
+    &lt;srccontr&gt;This online data viewer provides user-friendly access to coastal land cover and land cover change information developed through NOAA’s Coastal Change Analysis Program (C-CAP).&lt;/srccontr&gt;
+  &lt;/srcinfo&gt;
+  &lt;srcinfo&gt;
+    &lt;srccite&gt;
+      &lt;citeinfo&gt;
+        &lt;origin&gt;United States Department of Agriculture (USDA)&lt;/origin&gt;
+        &lt;origin&gt;National Agricultural Statistics Service (NASS)&lt;/origin&gt;
+        &lt;pubdate&gt;2019&lt;/pubdate&gt;
+        &lt;title&gt;Cropland Data Layer&lt;/title&gt;
+        &lt;geoform&gt;raster digital data&lt;/geoform&gt;
+        &lt;onlink&gt;https://www.nass.usda.gov/Research_and_Science/Cropland/Release/&lt;/onlink&gt;
+      &lt;/citeinfo&gt;
+    &lt;/srccite&gt;
+    &lt;typesrc&gt;Digital and/or Hardcopy&lt;/typesrc&gt;
+    &lt;srctime&gt;
+      &lt;timeinfo&gt;
+        &lt;rngdates&gt;
+          &lt;begdate&gt;2008&lt;/begdate&gt;
+          &lt;enddate&gt;2019&lt;/enddate&gt;
+        &lt;/rngdates&gt;
+      &lt;/timeinfo&gt;
+      &lt;srccurr&gt;observed&lt;/srccurr&gt;
+    &lt;/srctime&gt;
+    &lt;srccitea&gt;cultivated cropland 2008 to 2019 dataset&lt;/srccitea&gt;
+    &lt;srccontr&gt;The USDA, NASS Cropland Data Layer (CDL) is a raster, geo-referenced, crop-specific land cover data layer.&lt;/srccontr&gt;
+  &lt;/srcinfo&gt;
+  &lt;srcinfo&gt;
+    &lt;srccite&gt;
+      &lt;citeinfo&gt;
+        &lt;origin&gt;USDA Natural Resources Conservation Service&lt;/origin&gt;
+        &lt;pubdate&gt;2019&lt;/pubdate&gt;
+        &lt;title&gt;Hydric Soils database&lt;/title&gt;
+        &lt;geoform&gt;vector digital data&lt;/geoform&gt;
+        &lt;onlink&gt;https://data.nal.usda.gov/dataset/soil-use-hydric-soils-database&lt;/onlink&gt;
+      &lt;/citeinfo&gt;
+    &lt;/srccite&gt;
+    &lt;typesrc&gt;Digital and/or Hardcopy&lt;/typesrc&gt;
+    &lt;srctime&gt;
+      &lt;timeinfo&gt;
+        &lt;sngdate&gt;
+          &lt;caldate&gt;2019&lt;/caldate&gt;
+        &lt;/sngdate&gt;
+      &lt;/timeinfo&gt;
+      &lt;srccurr&gt;observed&lt;/srccurr&gt;
+    &lt;/srctime&gt;
+    &lt;srccitea&gt;hydric soils dataset&lt;/srccitea&gt;
+    &lt;srccontr&gt;Hydric soils are defined as those soils that are sufficiently wet in the upper part to develop anaerobic conditions during the growing season. The Hydric Soils section presents the most current information about hydric soils. The lists of hydric soils were created by using National Soil Information System (NASIS) database selection criteria that were developed by the National Technical Committee for Hydric Soils.&lt;/srccontr&gt;
+  &lt;/srcinfo&gt;
+  &lt;srcinfo&gt;
+    &lt;srccite&gt;
+      &lt;citeinfo&gt;
+        &lt;origin&gt;RuleQuest&lt;/origin&gt;
+        &lt;pubdate&gt;2019&lt;/pubdate&gt;
+        &lt;title&gt;See5 decision tree classification software &lt;/title&gt;
+        &lt;geoform&gt;application/service&lt;/geoform&gt;
+        &lt;othercit&gt;https://www.rulequest.com/see5-info.html&lt;/othercit&gt;
+      &lt;/citeinfo&gt;
+    &lt;/srccite&gt;
+    &lt;typesrc&gt;Digital and/or Hardcopy&lt;/typesrc&gt;
+    &lt;srctime&gt;
+      &lt;timeinfo&gt;
+        &lt;rngdates&gt;
+          &lt;begdate&gt;1986&lt;/begdate&gt;
+          &lt;enddate&gt;2019&lt;/enddate&gt;
+        &lt;/rngdates&gt;
+      &lt;/timeinfo&gt;
+      &lt;srccurr&gt;observed&lt;/srccurr&gt;
+    &lt;/srctime&gt;
+    &lt;srccitea&gt;See5&lt;/srccitea&gt;
+    &lt;srccontr&gt;See5 (Windows 8/10) and its Linux counterpart C5.0 are sophisticated data mining tools for discovering patterns that delineate categories, assembling them into classifiers, and using them to make predictions. The See5 decision tree classification software was run on the training samples to generate a set of rules, and the decision rules were applied to generate a land cover classification for each of the eight target years. The See5® software was run with four sets of independent variables: the 1986 to 2019 disturbance year data derived from VCT; the set of Landsat images; compactness indices from image segmentation; and a DEM and its derivatives. &lt;/srccontr&gt;
+  &lt;/srcinfo&gt;
+  &lt;procstep&gt;
+    &lt;procdesc&gt;The National Land Cover Database (NLCD) is fundamentally based on the analysis of Landsat data. In previous NLCD product generation, we used individual Landsat scenes for our imagery.  For NLCD 2019, we used composite images rather than individual scenes. Compositing made imagery generation more automated, reduced latency, and increased the mapping extent.  For the mapping extent for NLCD 2019, we divided CONUS into 50 blocks, each containing approximately 9 path/rows. &lt;/procdesc&gt;
+    &lt;srcused&gt;Landsat MSS&lt;/srcused&gt;
+    &lt;srcused&gt;Landsat TM&lt;/srcused&gt;
+    &lt;srcused&gt;DEM&lt;/srcused&gt;
+    &lt;srcused&gt;Landsat ETM+&lt;/srcused&gt;
+    &lt;srcused&gt;Landsat OLI&lt;/srcused&gt;
+    &lt;srcused&gt;Landsat TIRS&lt;/srcused&gt;
+    &lt;srcused&gt;Landsat ARD&lt;/srcused&gt;
+    &lt;procdate&gt;2019&lt;/procdate&gt;
+    &lt;srcprod&gt;USGS National Land Cover Database&lt;/srcprod&gt;
+    &lt;proccont&gt;
+      &lt;cntinfo&gt;
+        &lt;cntperp&gt;
+          &lt;cntper&gt;Jon Dewitz&lt;/cntper&gt;
+          &lt;cntorg&gt;U.S. Geological Survey, LAND RESOURCES&lt;/cntorg&gt;
+        &lt;/cntperp&gt;
+        &lt;cntpos&gt;GEOGRAPHER&lt;/cntpos&gt;
+        &lt;cntaddr&gt;
+          &lt;addrtype&gt;mailing address&lt;/addrtype&gt;
+          &lt;address&gt;47914 252Nd Street&lt;/address&gt;
+          &lt;city&gt;Sioux Falls&lt;/city&gt;
+          &lt;state&gt;SD&lt;/state&gt;
+          &lt;postal&gt;57198&lt;/postal&gt;
+          &lt;country&gt;US&lt;/country&gt;
+        &lt;/cntaddr&gt;
+        &lt;cntvoice&gt;605-594-2715&lt;/cntvoice&gt;
+        &lt;cntemail&gt;<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e58180928c919fa590968296cb828a93">[email&#160;protected]</a>&lt;/cntemail&gt;
+      &lt;/cntinfo&gt;
+    &lt;/proccont&gt;
+  &lt;/procstep&gt;
+  &lt;procstep&gt;
+    &lt;procdesc&gt;For compositing, we generated 2014, 2016, and 2019 leaf-on, leaf-off, and reference composite using Analysis Ready Data (ARD) Surface Reflectance data.  The leaf-on composite used data from May 1 to September 30.   The leaf-off composite used data from November 1 through April 1.  Finally, for reference we generated a 16-month composite image.  Each composite that was generated used the Euclidean norm, which is the sum of the squares for each observation. We took the Euclidean norm across the individual band differences from their respective medians; the observation with the closest per-band median values for all six bands in the ARD composite is the actual surface reflectance value.  &lt;/procdesc&gt;
+    &lt;srcused&gt;Landsat ARD&lt;/srcused&gt;
+    &lt;procdate&gt;2019&lt;/procdate&gt;
+    &lt;srcprod&gt;USGS National Land Cover Database&lt;/srcprod&gt;
+    &lt;proccont&gt;
+      &lt;cntinfo&gt;
+        &lt;cntperp&gt;
+          &lt;cntper&gt;Jon Dewitz&lt;/cntper&gt;
+          &lt;cntorg&gt;U.S. Geological Survey, CORE SCIENCE SYSTEMS&lt;/cntorg&gt;
+        &lt;/cntperp&gt;
+        &lt;cntpos&gt;GEOGRAPHER&lt;/cntpos&gt;
+        &lt;cntaddr&gt;
+          &lt;addrtype&gt;mailing address&lt;/addrtype&gt;
+          &lt;address&gt;47914 252Nd Street&lt;/address&gt;
+          &lt;city&gt;Sioux Falls&lt;/city&gt;
+          &lt;state&gt;SD&lt;/state&gt;
+          &lt;postal&gt;57198&lt;/postal&gt;
+          &lt;country&gt;US&lt;/country&gt;
+        &lt;/cntaddr&gt;
+        &lt;cntvoice&gt;605-594-2715&lt;/cntvoice&gt;
+        &lt;cntemail&gt;<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="cca8a9bba5b8b68cb9bfabbfe2aba3ba">[email&#160;protected]</a>&lt;/cntemail&gt;
+      &lt;/cntinfo&gt;
+    &lt;/proccont&gt;
+  &lt;/procstep&gt;
+  &lt;procstep&gt;
+    &lt;procdesc&gt;With each composite we generated a date image based on the ARD observation used for that date.  In addition, we generated a clear image from the observations that were flagged as either water or clear by FMask or pixel quality information. To reduce latency, we generated the composites using the USGS High Performance Computing (HPC) Denali system. &lt;/procdesc&gt;
+    &lt;srcused&gt;Landsat ARD&lt;/srcused&gt;
+    &lt;srcused&gt;USGS High Performance Computing (HPC) Denali system&lt;/srcused&gt;
+    &lt;procdate&gt;2019&lt;/procdate&gt;
+    &lt;srcprod&gt;USGS National Land Cover Database&lt;/srcprod&gt;
+    &lt;proccont&gt;
+      &lt;cntinfo&gt;
+        &lt;cntperp&gt;
+          &lt;cntper&gt;Jon Dewitz&lt;/cntper&gt;
+          &lt;cntorg&gt;U.S. Geological Survey, CORE SCIENCE SYSTEMS&lt;/cntorg&gt;
+        &lt;/cntperp&gt;
+        &lt;cntpos&gt;GEOGRAPHER&lt;/cntpos&gt;
+        &lt;cntaddr&gt;
+          &lt;addrtype&gt;mailing address&lt;/addrtype&gt;
+          &lt;address&gt;47914 252Nd Street&lt;/address&gt;
+          &lt;city&gt;Sioux Falls&lt;/city&gt;
+          &lt;state&gt;SD&lt;/state&gt;
+          &lt;postal&gt;57198&lt;/postal&gt;
+          &lt;country&gt;US&lt;/country&gt;
+        &lt;/cntaddr&gt;
+        &lt;cntvoice&gt;605-594-2715&lt;/cntvoice&gt;
+        &lt;cntemail&gt;<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6b0f0e1c021f112b1e180c18450c041d">[email&#160;protected]</a>&lt;/cntemail&gt;
+      &lt;/cntinfo&gt;
+    &lt;/proccont&gt;
+  &lt;/procstep&gt;
+  &lt;procstep&gt;
+    &lt;procdesc&gt;Once generated, each leaf-on and leaf-off composite was then screened and masked for additional clouds, shadows, and poorly filled areas that were missed by FMask or pixel quality information   For each block, we also evaluated the ARD reference composite—if that composite had any zeros in the bands, we filled in those areas with a 16-month reference surface reflectance composite, which was generated from Google Earth Engine (GEE), and produced a final reference composite.  This composite is based on the image cloud cover percentage that is less than 30 percent. For each block we created a final leaf-on/leaf-off composite. If an ARD composite had no mask, the ARD composite was the final composite.  If the ARD composite had areas that were masked, the leaf-on/leaf-off composite used the final reference composite to fill in those areas to create the final composite. &lt;/procdesc&gt;
+    &lt;srcused&gt;Landsat ARD&lt;/srcused&gt;
+    &lt;srcused&gt;Google Earth Engine (GEE)&lt;/srcused&gt;
+    &lt;procdate&gt;2019&lt;/procdate&gt;
+    &lt;srcprod&gt;USGS National Land Cover Database&lt;/srcprod&gt;
+    &lt;proccont&gt;
+      &lt;cntinfo&gt;
+        &lt;cntperp&gt;
+          &lt;cntper&gt;Jon Dewitz&lt;/cntper&gt;
+          &lt;cntorg&gt;U.S. Geological Survey, CORE SCIENCE SYSTEMS&lt;/cntorg&gt;
+        &lt;/cntperp&gt;
+        &lt;cntpos&gt;GEOGRAPHER&lt;/cntpos&gt;
+        &lt;cntaddr&gt;
+          &lt;addrtype&gt;mailing address&lt;/addrtype&gt;
+          &lt;address&gt;47914 252Nd Street&lt;/address&gt;
+          &lt;city&gt;Sioux Falls&lt;/city&gt;
+          &lt;state&gt;SD&lt;/state&gt;
+          &lt;postal&gt;57198&lt;/postal&gt;
+          &lt;country&gt;US&lt;/country&gt;
+        &lt;/cntaddr&gt;
+        &lt;cntvoice&gt;605-594-2715&lt;/cntvoice&gt;
+        &lt;cntemail&gt;<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="bbdfdeccd2cfc1fbcec8dcc895dcd4cd">[email&#160;protected]</a>&lt;/cntemail&gt;
+      &lt;/cntinfo&gt;
+    &lt;/proccont&gt;
+  &lt;/procstep&gt;
+  &lt;procstep&gt;
+    &lt;procdesc&gt;At this point, mappers evaluated the final composites, and if they found any additional areas that needed to be masked out, they updated the masks and created new final composites. Other datasets used as direct input into classifier along with the Landsat composites are: all NLCD land cover products produced for the 2019 edition; 3D Elevation Program (3DEP) digital elevation data; Cropland Data Layer (CDL); National Wetlands Inventory (NWI); Soil Survey Geographic (SSURGO) Database; and State Soil Geographic (STATSGO2) Database. SSURGO (with STATSGO2 to fill in gaps) was the basis for a hydric soils data layer used in training data assembly. &lt;/procdesc&gt;
+    &lt;srcused&gt;3D Elevation Program (3DEP) digital elevation data&lt;/srcused&gt;
+    &lt;srcused&gt;Cropland Data Layer (CDL)&lt;/srcused&gt;
+    &lt;srcused&gt;National Wetlands Inventory (NWI)&lt;/srcused&gt;
+    &lt;srcused&gt;Soil Survey Geographic (SSURGO) Database&lt;/srcused&gt;
+    &lt;srcused&gt;State Soil Geographic (STATSGO2) Database&lt;/srcused&gt;
+    &lt;procdate&gt;2019&lt;/procdate&gt;
+    &lt;srcprod&gt;USGS National Land Cover Database&lt;/srcprod&gt;
+    &lt;proccont&gt;
+      &lt;cntinfo&gt;
+        &lt;cntperp&gt;
+          &lt;cntper&gt;Jon Dewitz&lt;/cntper&gt;
+          &lt;cntorg&gt;U.S. Geological Survey, CORE SCIENCE SYSTEMS&lt;/cntorg&gt;
+        &lt;/cntperp&gt;
+        &lt;cntpos&gt;GEOGRAPHER&lt;/cntpos&gt;
+        &lt;cntaddr&gt;
+          &lt;addrtype&gt;mailing address&lt;/addrtype&gt;
+          &lt;address&gt;47914 252Nd Street&lt;/address&gt;
+          &lt;city&gt;Sioux Falls&lt;/city&gt;
+          &lt;state&gt;SD&lt;/state&gt;
+          &lt;postal&gt;57198&lt;/postal&gt;
+          &lt;country&gt;US&lt;/country&gt;
+        &lt;/cntaddr&gt;
+        &lt;cntvoice&gt;605-594-2715&lt;/cntvoice&gt;
+        &lt;cntemail&gt;<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="076362706e737d477274607429606871">[email&#160;protected]</a>&lt;/cntemail&gt;
+      &lt;/cntinfo&gt;
+    &lt;/proccont&gt;
+  &lt;/procstep&gt;
+  &lt;procstep&gt;
+    &lt;procdesc&gt;NLCD 2019 was produced by modeling land cover change over eight intervals between 2001 and 2019, with consistent change trajectories built into the process. The first set of models in this process are for multi-spectral change detection. The Multi-Index Integrated Change Analysis (MIICA) model outputs a change map between two dates of imagery. Five spectral indices are also calculated, and a disturbance map is produced by the Vegetation Change Tracker (VCT) software. The MIICA outputs, the five spectral indices, and the 1986 to 2019 disturbance map  are the inputs to the training dataset assembly stage.&lt;/procdesc&gt;
+    &lt;srcused&gt;Multi-Index Integrated Change Analysis (MIICA)&lt;/srcused&gt;
+    &lt;srcused&gt;Vegetation Change Tracker (VCT)&lt;/srcused&gt;
+    &lt;procdate&gt;2019&lt;/procdate&gt;
+    &lt;srcprod&gt;USGS National Land Cover Database&lt;/srcprod&gt;
+    &lt;proccont&gt;
+      &lt;cntinfo&gt;
+        &lt;cntperp&gt;
+          &lt;cntper&gt;Jon Dewitz&lt;/cntper&gt;
+          &lt;cntorg&gt;U.S. Geological Survey, CORE SCIENCE SYSTEMS&lt;/cntorg&gt;
+        &lt;/cntperp&gt;
+        &lt;cntpos&gt;GEOGRAPHER&lt;/cntpos&gt;
+        &lt;cntaddr&gt;
+          &lt;addrtype&gt;mailing address&lt;/addrtype&gt;
+          &lt;address&gt;47914 252Nd Street&lt;/address&gt;
+          &lt;city&gt;Sioux Falls&lt;/city&gt;
+          &lt;state&gt;SD&lt;/state&gt;
+          &lt;postal&gt;57198&lt;/postal&gt;
+          &lt;country&gt;US&lt;/country&gt;
+        &lt;/cntaddr&gt;
+        &lt;cntvoice&gt;605-594-2715&lt;/cntvoice&gt;
+        &lt;cntemail&gt;<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="137776647a676953666074603d747c65">[email&#160;protected]</a>&lt;/cntemail&gt;
+      &lt;/cntinfo&gt;
+    &lt;/proccont&gt;
+  &lt;/procstep&gt;
+  &lt;procstep&gt;
+    &lt;procdesc&gt;Because 2019 imagery is based upon composites, and 2001 to 2016 were previously based upon single date path rows, a bridge between these two types of imagery was needed. All preprocessing, change trajectory, and spectral indices follow the same logic as the 2001 to 2016 process. However, since the 2001 to 2016 process used static dates that could be a year prior or post the of the target year (for example, both 2015 and 2017 images were used over about 1/5 of the United States for the 2016 target year), overlap between this type of imagery was as needed. Composites were made for leaf on and leaf off in 2014, 2016, and 2019. The 2014 and 2016 images dovetail with the path row imagery previously used. This allows alignment of change dates where needed. It also provides similar imagery where comparisons between pre-and post dates for change (2014 to 2016, or 2016 to 2019) are essential. The use of the same style change pairs ensures proper phenological matches and similar spectral properties. &lt;/procdesc&gt;
+    &lt;srcused&gt;Landsat MSS&lt;/srcused&gt;
+    &lt;srcused&gt;Landsat TM&lt;/srcused&gt;
+    &lt;srcused&gt;DEM&lt;/srcused&gt;
+    &lt;srcused&gt;Landsat ETM+&lt;/srcused&gt;
+    &lt;srcused&gt;Landsat OLI&lt;/srcused&gt;
+    &lt;srcused&gt;Landsat TIRS&lt;/srcused&gt;
+    &lt;srcused&gt;Landsat ARD&lt;/srcused&gt;
+    &lt;procdate&gt;2019&lt;/procdate&gt;
+    &lt;srcprod&gt;USGS National Land Cover Database&lt;/srcprod&gt;
+    &lt;proccont&gt;
+      &lt;cntinfo&gt;
+        &lt;cntperp&gt;
+          &lt;cntper&gt;Jon Dewitz&lt;/cntper&gt;
+          &lt;cntorg&gt;U.S. Geological Survey, CORE SCIENCE SYSTEMS&lt;/cntorg&gt;
+        &lt;/cntperp&gt;
+        &lt;cntpos&gt;GEOGRAPHER&lt;/cntpos&gt;
+        &lt;cntaddr&gt;
+          &lt;addrtype&gt;mailing address&lt;/addrtype&gt;
+          &lt;address&gt;47914 252Nd Street&lt;/address&gt;
+          &lt;city&gt;Sioux Falls&lt;/city&gt;
+          &lt;state&gt;SD&lt;/state&gt;
+          &lt;postal&gt;57198&lt;/postal&gt;
+          &lt;country&gt;US&lt;/country&gt;
+        &lt;/cntaddr&gt;
+        &lt;cntvoice&gt;605-594-2715&lt;/cntvoice&gt;
+        &lt;cntemail&gt;<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e68283918f929ca693958195c8818990">[email&#160;protected]</a>&lt;/cntemail&gt;
+      &lt;/cntinfo&gt;
+    &lt;/proccont&gt;
+  &lt;/procstep&gt;
+  &lt;procstep&gt;
+    &lt;procdesc&gt;The set of models previously developed to assemble a training dataset for each land cover class for the 2001 to 2016 process was repeated for 2014 to 2016, and 2016 to 2019. The training dataset models were built with Landsat images and derived indices, spectral change products, trajectory analysis, and ancillary data: previous years’ NLCD land cover; C-CAP land cover; CDL; NWI; a cultivated cropland 2008 to 2019 dataset; and a hydric soils dataset . Image segmentation, using Ecognition,  was performed on the Landsat scenes and composites, and the resulting image objects were used to mitigate noise in the training data. The final output of this stage is training data for each of the target years, used as input into the initial land cover classification stage.  &lt;/procdesc&gt;
+    &lt;srcused&gt;C-CAP land cover&lt;/srcused&gt;
+    &lt;srcused&gt;Cropland Data Layer (CDL)&lt;/srcused&gt;
+    &lt;srcused&gt;National Wetlands Inventory (NWI)&lt;/srcused&gt;
+    &lt;srcused&gt;cultivated cropland 2008 to 2019 dataset&lt;/srcused&gt;
+    &lt;srcused&gt;hydric soils dataset&lt;/srcused&gt;
+    &lt;procdate&gt;2019&lt;/procdate&gt;
+    &lt;srcprod&gt;USGS National Land Cover Database&lt;/srcprod&gt;
+    &lt;proccont&gt;
+      &lt;cntinfo&gt;
+        &lt;cntperp&gt;
+          &lt;cntper&gt;Jon Dewitz&lt;/cntper&gt;
+          &lt;cntorg&gt;U.S. Geological Survey, CORE SCIENCE SYSTEMS&lt;/cntorg&gt;
+        &lt;/cntperp&gt;
+        &lt;cntpos&gt;GEOGRAPHER&lt;/cntpos&gt;
+        &lt;cntaddr&gt;
+          &lt;addrtype&gt;mailing address&lt;/addrtype&gt;
+          &lt;address&gt;47914 252Nd Street&lt;/address&gt;
+          &lt;city&gt;Sioux Falls&lt;/city&gt;
+          &lt;state&gt;SD&lt;/state&gt;
+          &lt;postal&gt;57198&lt;/postal&gt;
+          &lt;country&gt;US&lt;/country&gt;
+        &lt;/cntaddr&gt;
+        &lt;cntvoice&gt;605-594-2715&lt;/cntvoice&gt;
+        &lt;cntemail&gt;<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="157170627c616f55606672663b727a63">[email&#160;protected]</a>&lt;/cntemail&gt;
+      &lt;/cntinfo&gt;
+    &lt;/proccont&gt;
+  &lt;/procstep&gt;
+  &lt;procstep&gt;
+    &lt;procdesc&gt;For each of the eight target years of Landsat data, two percent of all available training data per path/row was drawn from the data as training samples, and one percent was drawn as validation samples. The See5 decision tree classification software was run on the training samples to generate a set of rules, and the decision rules were applied to generate a land cover classification for each of the eight target years. </code></pre>
+The See5 software was run with four sets of independent variables: the 1986 to 2019 disturbance year data derived from VCT; the set of Landsat images; compactness indices from image segmentation; and a DEM and its derivatives. </procdesc> <srcused>See5</srcused> <srcused>Vegetation Change Tracker (VCT)</srcused> <srcused>Landsat ARD</srcused> <srcused>DEM</srcused> <procdate>2019</procdate> <srcprod>USGS National Land Cover Database</srcprod> <proccont> <cntinfo> <cntperp> <cntper>Jon Dewitz</cntper> <cntorg>U.S. Geological Survey, CORE SCIENCE SYSTEMS</cntorg> </cntperp> <cntpos>GEOGRAPHER</cntpos> <cntaddr> <addrtype>mailing address</addrtype>
+<address>
+47914 252Nd Street
+</address>
+<pre><code>          &lt;city&gt;Sioux Falls&lt;/city&gt;
+          &lt;state&gt;SD&lt;/state&gt;
+          &lt;postal&gt;57198&lt;/postal&gt;
+          &lt;country&gt;US&lt;/country&gt;
+        &lt;/cntaddr&gt;
+        &lt;cntvoice&gt;605-594-2715&lt;/cntvoice&gt;
+        &lt;cntemail&gt;<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="761213011f020c360305110558111900">[email&#160;protected]</a>&lt;/cntemail&gt;
+      &lt;/cntinfo&gt;
+    &lt;/proccont&gt;
+  &lt;/procstep&gt;
+  &lt;procstep&gt;
+    &lt;procdesc&gt;The classifier was run twice, once with all land cover classes processed and the 1986 to 2019 disturbance year data included, and again with two classes - Urban and Water - omitted from the classification and the disturbance year data not included in processing as these classes have separate process steps. Urban is directly derived from percent impervious, and water is directly derived from the first classification and derived water indices from Landsat data to remove areas of spectral confusion such as shadows and deep forest.&lt;/procdesc&gt;
+    &lt;srcused&gt;Landsat MSS&lt;/srcused&gt;
+    &lt;srcused&gt;Landsat TM&lt;/srcused&gt;
+    &lt;srcused&gt;DEM&lt;/srcused&gt;
+    &lt;srcused&gt;Landsat ETM+&lt;/srcused&gt;
+    &lt;srcused&gt;Landsat OLI&lt;/srcused&gt;
+    &lt;srcused&gt;Landsat TIRS&lt;/srcused&gt;
+    &lt;srcused&gt;Landsat ARD&lt;/srcused&gt;
+    &lt;procdate&gt;2019&lt;/procdate&gt;
+    &lt;srcprod&gt;USGS National Land Cover Database&lt;/srcprod&gt;
+    &lt;proccont&gt;
+      &lt;cntinfo&gt;
+        &lt;cntperp&gt;
+          &lt;cntper&gt;Jon Dewitz&lt;/cntper&gt;
+          &lt;cntorg&gt;U.S. Geological Survey, CORE SCIENCE SYSTEMS&lt;/cntorg&gt;
+        &lt;/cntperp&gt;
+        &lt;cntpos&gt;GEOGRAPHER&lt;/cntpos&gt;
+        &lt;cntaddr&gt;
+          &lt;addrtype&gt;mailing address&lt;/addrtype&gt;
+          &lt;address&gt;47914 252Nd Street&lt;/address&gt;
+          &lt;city&gt;Sioux Falls&lt;/city&gt;
+          &lt;state&gt;SD&lt;/state&gt;
+          &lt;postal&gt;57198&lt;/postal&gt;
+          &lt;country&gt;US&lt;/country&gt;
+        &lt;/cntaddr&gt;
+        &lt;cntvoice&gt;605-594-2715&lt;/cntvoice&gt;
+        &lt;cntemail&gt;<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6004051709141a20151307134e070f16">[email&#160;protected]</a>&lt;/cntemail&gt;
+      &lt;/cntinfo&gt;
+    &lt;/proccont&gt;
+  &lt;/procstep&gt;
+  &lt;procstep&gt;
+    &lt;procdesc&gt;The two classifications were processed with ancillary data and the segmentation polygons to produce eight initial land cover maps.&lt;/procdesc&gt;
+    &lt;procdate&gt;2019&lt;/procdate&gt;
+    &lt;srcprod&gt;USGS National Land Cover Database&lt;/srcprod&gt;
+    &lt;proccont&gt;
+      &lt;cntinfo&gt;
+        &lt;cntperp&gt;
+          &lt;cntper&gt;Jon Dewitz&lt;/cntper&gt;
+          &lt;cntorg&gt;U.S. Geological Survey, CORE SCIENCE SYSTEMS&lt;/cntorg&gt;
+        &lt;/cntperp&gt;
+        &lt;cntpos&gt;GEOGRAPHER&lt;/cntpos&gt;
+        &lt;cntaddr&gt;
+          &lt;addrtype&gt;mailing address&lt;/addrtype&gt;
+          &lt;address&gt;47914 252Nd Street&lt;/address&gt;
+          &lt;city&gt;Sioux Falls&lt;/city&gt;
+          &lt;state&gt;SD&lt;/state&gt;
+          &lt;postal&gt;57198&lt;/postal&gt;
+          &lt;country&gt;US&lt;/country&gt;
+        &lt;/cntaddr&gt;
+        &lt;cntvoice&gt;605-594-2715&lt;/cntvoice&gt;
+        &lt;cntemail&gt;<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="593d3c2e302d23192c2a3e2a773e362f">[email&#160;protected]</a>&lt;/cntemail&gt;
+      &lt;/cntinfo&gt;
+    &lt;/proccont&gt;
+  &lt;/procstep&gt;
+  &lt;procstep&gt;
+    &lt;procdesc&gt;A post-classification refinement process was developed to correct classification errors in each target year, check for consistency of land cover labels over time, and improve spatial coherence of land cover distribution. Refinement was conducted class-by-class in hierarchical order: (1) Water, (2) Wetlands, (3) Forest and forest transition, (4) Permanent snow, (5) Agricultural lands, and (6) Persistent shrubland and herbaceous. Models were developed for refinement of each class and each type of confusion. For example, confusion between coniferous forest and water, both spectrally &quot;dark&quot; could be corrected by reclassifying water to coniferous forest where slope was greater than 2 percent. Confusion between forest and cropland could be mitigated with CDL data, and so forth. &lt;/procdesc&gt;
+    &lt;srcused&gt;Cropland Data Layer (CDL)&lt;/srcused&gt;
+    &lt;procdate&gt;2019&lt;/procdate&gt;
+    &lt;srcprod&gt;USGS National Land Cover Database&lt;/srcprod&gt;
+    &lt;proccont&gt;
+      &lt;cntinfo&gt;
+        &lt;cntperp&gt;
+          &lt;cntper&gt;Jon Dewitz&lt;/cntper&gt;
+          &lt;cntorg&gt;U.S. Geological Survey, CORE SCIENCE SYSTEMS&lt;/cntorg&gt;
+        &lt;/cntperp&gt;
+        &lt;cntpos&gt;GEOGRAPHER&lt;/cntpos&gt;
+        &lt;cntaddr&gt;
+          &lt;addrtype&gt;mailing address&lt;/addrtype&gt;
+          &lt;address&gt;47914 252Nd Street&lt;/address&gt;
+          &lt;city&gt;Sioux Falls&lt;/city&gt;
+          &lt;state&gt;SD&lt;/state&gt;
+          &lt;postal&gt;57198&lt;/postal&gt;
+          &lt;country&gt;US&lt;/country&gt;
+        &lt;/cntaddr&gt;
+        &lt;cntvoice&gt;605-594-2715&lt;/cntvoice&gt;
+        &lt;cntemail&gt;<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="721617051b060832070115015c151d04">[email&#160;protected]</a>&lt;/cntemail&gt;
+      &lt;/cntinfo&gt;
+    &lt;/proccont&gt;
+  &lt;/procstep&gt;
+  &lt;procstep&gt;
+    &lt;procdesc&gt;The final integration step resolved class label issues pertinent to local environments (such as coastal areas), and, for land cover classes other than Water (which is directly derived from a combination of Landsat indices and initial classifications) and Developed (which is directly derived from percent developed impervious surface), ensured that all pixels in a segmentation object were in the same class. Pixel-based and object-based land cover labels were checked for differences, which were reconciled by a rule-based model. Water and Developed classes kept pixel values intact even in areas that were smaller than segmentation objects. Change trajectories for each class were checked for consistency through all years.&lt;/procdesc&gt;
+    &lt;srcused&gt;Landsat MSS&lt;/srcused&gt;
+    &lt;srcused&gt;Landsat TM&lt;/srcused&gt;
+    &lt;srcused&gt;DEM&lt;/srcused&gt;
+    &lt;srcused&gt;Landsat ETM+&lt;/srcused&gt;
+    &lt;srcused&gt;Landsat OLI&lt;/srcused&gt;
+    &lt;srcused&gt;Landsat TIRS&lt;/srcused&gt;
+    &lt;srcused&gt;Landsat ARD&lt;/srcused&gt;
+    &lt;procdate&gt;2019&lt;/procdate&gt;
+    &lt;srcprod&gt;USGS National Land Cover Database&lt;/srcprod&gt;
+    &lt;proccont&gt;
+      &lt;cntinfo&gt;
+        &lt;cntperp&gt;
+          &lt;cntper&gt;Jon Dewitz&lt;/cntper&gt;
+          &lt;cntorg&gt;U.S. Geological Survey, CORE SCIENCE SYSTEMS&lt;/cntorg&gt;
+        &lt;/cntperp&gt;
+        &lt;cntpos&gt;GEOGRAPHER&lt;/cntpos&gt;
+        &lt;cntaddr&gt;
+          &lt;addrtype&gt;mailing address&lt;/addrtype&gt;
+          &lt;address&gt;47914 252Nd Street&lt;/address&gt;
+          &lt;city&gt;Sioux Falls&lt;/city&gt;
+          &lt;state&gt;SD&lt;/state&gt;
+          &lt;postal&gt;57198&lt;/postal&gt;
+          &lt;country&gt;US&lt;/country&gt;
+        &lt;/cntaddr&gt;
+        &lt;cntvoice&gt;605-594-2715&lt;/cntvoice&gt;
+        &lt;cntemail&gt;<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="87e3e2f0eef3fdc7f2f4e0f4a9e0e8f1">[email&#160;protected]</a>&lt;/cntemail&gt;
+      &lt;/cntinfo&gt;
+    &lt;/proccont&gt;
+  &lt;/procstep&gt;
+&lt;/lineage&gt;</code></pre>
+</dataqual> <spdoinfo> <direct>Raster</direct> <rastinfo> <rasttype>Grid Cell</rasttype> <rowcount>104424</rowcount> <colcount>161190</colcount> <vrtcount>1</vrtcount> </rastinfo> </spdoinfo> <spref> <horizsys> <planar> <mapproj> <mapprojn>Albers Conical Equal Area</mapprojn> <albers> <stdparll>29.5</stdparll> <stdparll>45.5</stdparll> <longcm>-96.0</longcm> <latprjo>23.0</latprjo> <feast>0.0</feast> <fnorth>0.0</fnorth> </albers> </mapproj> <planci> <plance>row and column</plance> <coordrep> <absres>30.0</absres> <ordres>30.0</ordres> </coordrep> <plandu>meters</plandu> </planci> </planar> <geodetic> <horizdn>WGS_1984</horizdn> <ellips>WGS 84</ellips> <semiaxis>6378137.0</semiaxis> <denflat>298.257223563</denflat> </geodetic> </horizsys> </spref> <eainfo> <detailed> <enttyp> <enttypl>NLCD Land Cover Layer Attribute Table</enttypl> <enttypd>Land Cover class counts and descriptions for the NLCD Land Cover Database</enttypd> <enttypds>National Land Cover Database</enttypds> </enttyp> <attr> <attrlabl>OID</attrlabl> <attrdef>Internal feature number.</attrdef> <attrdefs>ESRI</attrdefs> <attrdomv> <udom>Sequential unique whole numbers that are automatically generated.</udom> </attrdomv> </attr> <attr> <attrlabl>Count</attrlabl> <attrdef>A nominal integer value that designates the number of pixels that have each value in the file; histogram column in ERDAS Imagine raster attributes table.</attrdef> <attrdefs>ESRI</attrdefs> <attrdomv> <udom>Integer</udom> </attrdomv> </attr> <attr> <attrlabl>NLCD Land Cover Class</attrlabl><attrdef>Land Cover Class Code Value.</attrdef><attrdefs>NLCD Legend Land Cover Class Descriptions</attrdefs><attrdomv> <edom> <edomv>0</edomv> <edomvd>Unclassified</edomvd> <edomvds>Producer defined</edomvds> </edom> </attrdomv> <attrdomv> <edom> <edomv>11</edomv> <edomvd>Open Water - All areas of open water, generally with less than 25% cover or vegetation or soil</edomvd> <edomvds>NLCD Legend Land Cover Class Descriptions</edomvds> </edom> </attrdomv> <attrdomv> <edom> <edomv>12</edomv> <edomvd>Perennial Ice/Snow - All areas characterized by a perennial cover of ice and/or snow, generally greater than 25% of total cover.</edomvd> <edomvds>NLCD Legend Land Cover Class Descriptions</edomvds> </edom> </attrdomv> <attrdomv> <edom> <edomv>21</edomv> <edomvd>Developed, Open Space - Includes areas with a mixture of some constructed materials, but mostly vegetation in the form of lawn grasses. Impervious surfaces account for less than 20 percent of total cover. These areas most commonly include large-lot single-family housing units, parks, golf courses, and vegetation planted in developed settings for recreation, erosion control, or aesthetic purposes.</edomvd> <edomvds>NLCD Legend Land Cover Class Descriptions</edomvds> </edom> </attrdomv> <attrdomv> <edom> <edomv>22</edomv> <edomvd>Developed, Low Intensity -Includes areas with a mixture of constructed materials and vegetation. Impervious surfaces account for 20-49 percent of total cover. These areas most commonly include single-family housing units.</edomvd> <edomvds>NLCD Legend Land Cover Class Descriptions</edomvds> </edom> </attrdomv> <attrdomv> <edom> <edomv>23</edomv> <edomvd>Developed, Medium Intensity - Includes areas with a mixture of constructed materials and vegetation. Impervious surfaces account for 50-79 percent of the total cover. These areas most commonly include single-family housing units.</edomvd> <edomvds>NLCD Legend Land Cover Class Descriptions</edomvds> </edom> </attrdomv> <attrdomv> <edom> <edomv>24</edomv> <edomvd>Developed, High Intensity - Includes highly developed areas where people reside or work in high numbers. Examples include apartment complexes, row houses and commercial/industrial. Impervious surfaces account for 80 to 100 percent of the total cover.</edomvd> <edomvds>NLCD Legend Land Cover Class Descriptions</edomvds> </edom> </attrdomv> <attrdomv> <edom> <edomv>31</edomv> <edomvd>Barren Land (Rock/Sand/Clay) - Barren areas of bedrock, desert pavement, scarps, talus, slides, volcanic material, glacial debris, sand dunes, strip mines, gravel pits and other accumulations of earthen material. Generally, vegetation accounts for less than 15% of total cover.</edomvd> <edomvds>NLCD Legend Land Cover Class Descriptions</edomvds> </edom> </attrdomv> <attrdomv> <edom> <edomv>41</edomv> <edomvd>Deciduous Forest - Areas dominated by trees generally greater than 5 meters tall, and greater than 20% of total vegetation cover. More than 75 percent of the tree species shed foliage simultaneously in response to seasonal change.</edomvd> <edomvds>NLCD Legend Land Cover Class Descriptions</edomvds> </edom> </attrdomv> <attrdomv> <edom> <edomv>42</edomv> <edomvd>Evergreen Forest - Areas dominated by trees generally greater than 5 meters tall, and greater than 20% of total vegetation cover. More than 75 percent of the tree species maintain their leaves all year. Canopy is never without green foliage.</edomvd> <edomvds>NLCD Legend Land Cover Class Descriptions</edomvds> </edom> </attrdomv> <attrdomv> <edom> <edomv>43</edomv> <edomvd>Mixed Forest - Areas dominated by trees generally greater than 5 meters tall, and greater than 20% of total vegetation cover. Neither deciduous nor evergreen species are greater than 75 percent of total tree cover.</edomvd> <edomvds>NLCD Legend Land Cover Class Descriptions</edomvds> </edom> </attrdomv> <attrdomv> <edom> <edomv>51</edomv> <edomvd>Dwarf Scrub - Alaska only areas dominated by shrubs less than 20 centimeters tall with shrub canopy typically greater than 20% of total vegetation. This type is often co-associated with grasses, sedges, herbs, and non-vascular vegetation.</edomvd> <edomvds>NLCD Legend Land Cover Class Descriptions</edomvds> </edom> </attrdomv> <attrdomv> <edom> <edomv>52</edomv> <edomvd>Shrub/Scrub - Areas dominated by shrubs; less than 5 meters tall with shrub canopy typically greater than 20% of total vegetation. This class includes true shrubs, young trees in an early successional stage or trees stunted from environmental conditions.</edomvd> <edomvds>NLCD Legend Land Cover Class Descriptions</edomvds> </edom> </attrdomv> <attrdomv> <edom> <edomv>71</edomv> <edomvd>Grassland/Herbaceous - Areas dominated by grammanoid or herbaceous vegetation, generally greater than 80% of total vegetation. These areas are not subject to intensive management such as tilling, but can be utilized for grazing.</edomvd> <edomvds>NLCD Legend Land Cover Class Descriptions</edomvds> </edom> </attrdomv> <attrdomv> <edom> <edomv>72</edomv> <edomvd>Sedge/Herbaceous - Alaska only areas dominated by sedges and forbs, generally greater than 80% of total vegetation. This type can occur with significant other grasses or other grass like plants, and includes sedge tundra, and sedge tussock tundra.</edomvd> <edomvds>NLCD Legend Land Cover Class Descriptions</edomvds> </edom> </attrdomv> <attrdomv> <edom> <edomv>73</edomv> <edomvd>Lichens - Alaska only areas dominated by fruticose or foliose lichens generally greater than 80% of total vegetation.</edomvd> <edomvds>NLCD Legend Land Cover Class Descriptions</edomvds> </edom> </attrdomv> <attrdomv> <edom> <edomv>74</edomv> <edomvd>Moss - Alaska only areas dominated by mosses, generally greater than 80% of total vegetation.</edomvd> <edomvds>NLCD Legend Land Cover Class Descriptions</edomvds> </edom> </attrdomv> <attrdomv> <edom> <edomv>81</edomv> <edomvd>Pasture/Hay - Areas of grasses, legumes, or grass-legume mixtures planted for livestock grazing or the production of seed or hay crops, typically on a perennial cycle. Pasture/hay vegetation accounts for greater than 20 percent of total vegetation.</edomvd> <edomvds>NLCD Legend Land Cover Class Descriptions</edomvds> </edom> </attrdomv> <attrdomv> <edom> <edomv>82</edomv> <edomvd>Cultivated Crops - Areas used for the production of annual crops, such as corn, soybeans, vegetables, tobacco, and cotton, and also perennial woody crops such as orchards and vineyards. Crop vegetation accounts for greater than 20 percent of total vegetation. This class also includes all land being actively tilled.</edomvd> <edomvds>NLCD Legend Land Cover Class Descriptions</edomvds> </edom> </attrdomv> <attrdomv> <edom> <edomv>90</edomv> <edomvd>Woody Wetlands - Areas where forest or shrub land vegetation accounts for greater than 20 percent of vegetative cover and the soil or substrate is periodically saturated with or covered with water.</edomvd> <edomvds>NLCD Legend Land Cover Class Descriptions</edomvds> </edom> </attrdomv> <attrdomv> <edom> <edomv>95</edomv> <edomvd>Emergent Herbaceous Wetlands - Areas where perennial herbaceous vegetation accounts for greater than 80 percent of vegetative cover and the soil or substrate is periodically saturated with or covered with water.</edomvd> <edomvds>NLCD Legend Land Cover Class Descriptions</edomvds> </edom> </attrdomv> </attr> <attr> <attrlabl>Red</attrlabl> <attrdef>Red color code for RGB. The value is arbitrarily assigned by the display software package, unless defined by user.</attrdef> <attrdefs>NLCD 2019</attrdefs> <attrdomv> <rdom> <rdommin>0</rdommin> <rdommax>255</rdommax> </rdom> </attrdomv> </attr> <attr> <attrlabl>Green</attrlabl> <attrdef>Green color code for RGB. The value is arbitrarily assigned by the display software package, unless defined by user.</attrdef> <attrdefs>NLCD 2019</attrdefs> <attrdomv> <rdom> <rdommin>0</rdommin> <rdommax>255</rdommax> </rdom> </attrdomv> </attr> <attr> <attrlabl>Blue</attrlabl> <attrdef>Blue color code for RGB. The value is arbitrarily assigned by the display software package, unless defined by user.</attrdef> <attrdefs>NLCD 2019</attrdefs> <attrdomv> <rdom> <rdommin>0</rdommin> <rdommax>255</rdommax> </rdom> </attrdomv> </attr> <attr> <attrlabl>Opacity</attrlabl> <attrdef>A measure of how opaque, or solid, a color is displayed in a layer.</attrdef> <attrdefs>NLCD 2019</attrdefs> <attrdomv> <rdom> <rdommin>0</rdommin> <rdommax>0.1</rdommax> <attrmres>0.01</attrmres> </rdom> </attrdomv> </attr> <attr> <attrlabl>Value</attrlabl> <attrdef>*while the file structure shows values in range from 0-255, the values of 0-100 are the only real populated values, in addition to a background value of 127.</attrdef> <attrdefs>NLCD 2019</attrdefs> <attrdomv> <edom> <edomv>127</edomv> <edomvd>Background value</edomvd> <edomvds>Producer defined</edomvds> </edom> </attrdomv> <attrdomv> <rdom> <rdommin>0</rdommin> <rdommax>100</rdommax> <attrunit>percentage</attrunit> <attrmres>0.1</attrmres> </rdom> </attrdomv> </attr> </detailed> <overview> <eaover>Land Cover Class RGB Color Value Table. The specific RGB values for the NLCD Land Cover Class’s that were used for NLCD 2019. </eaover> <eadetcit>Attributes defined by USGS and ESRI. Value Red Green Blue 0 0 0 0 11 70 107 159 12 209 222 248 21 222 197 197 22 217 146 130 23 235 0 0 24 171 0 0 31 179 172 159 41 104 171 95 42 28 95 44 43 181 197 143 52 204 184 121 71 223 223 194 81 220 217 57 82 171 108 40 90 184 217 235 95 108 159 184</eadetcit> </overview> </eainfo> <distinfo> <distrib> <cntinfo> <cntorgp> <cntorg>U.S. Geological Survey</cntorg> <cntper>GS ScienceBase</cntper> </cntorgp> <cntaddr> <addrtype>mailing address</addrtype>
+<address>
+Denver Federal Center, Building 810, Mail Stop 302
+</address>
+<pre><code>      &lt;city&gt;Denver&lt;/city&gt;
+      &lt;state&gt;CO&lt;/state&gt;
+      &lt;postal&gt;80225&lt;/postal&gt;
+      &lt;country&gt;United States&lt;/country&gt;
+    &lt;/cntaddr&gt;
+    &lt;cntvoice&gt;1-888-275-8747&lt;/cntvoice&gt;
+    &lt;cntemail&gt;<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c4b7a7ada1aaa7a1a6a5b7a184b1b7a3b7eaa3abb2">[email&#160;protected]</a>&lt;/cntemail&gt;
+  &lt;/cntinfo&gt;
+&lt;/distrib&gt;
+&lt;distliab&gt;Unless otherwise stated, all data, metadata and related materials are considered to satisfy the quality standards relative to the purpose for which the data were collected. Although these data and associated metadata have been reviewed for accuracy and completeness and approved for release by the U.S. Geological Survey (USGS), no warranty expressed or implied is made regarding the display or utility of the data for other purposes, nor on all computer systems, nor shall the act of distribution constitute any such warranty.&lt;/distliab&gt;
+&lt;stdorder&gt;
+  &lt;digform&gt;&lt;digtinfo&gt;
+      &lt;formname&gt;ERDAS&lt;/formname&gt;
+      &lt;formvern&gt;Imagine 2018&lt;/formvern&gt;
+      &lt;formspec&gt;.img&lt;/formspec&gt;
+      &lt;transize&gt;1012.0&lt;/transize&gt;
+    &lt;/digtinfo&gt;
+    &lt;digtopt&gt;&lt;onlinopt&gt;&lt;computer&gt;&lt;networka&gt;&lt;networkr&gt;https://doi.org/10.5066/P9KZCM54&lt;/networkr&gt;&lt;/networka&gt;&lt;/computer&gt;&lt;/onlinopt&gt;&lt;/digtopt&gt;&lt;/digform&gt;
+  &lt;fees&gt;None&lt;/fees&gt;
+&lt;/stdorder&gt;
+&lt;techpreq&gt;ESRI ArcMap Suite and/or Arc/Info software, and supporting operating systems.&lt;/techpreq&gt;</code></pre>
+</distinfo> <metainfo> <metd>20210611</metd> <metc> <cntinfo> <cntorgp> <cntorg>U.S. Geological Survey</cntorg> </cntorgp> <cntpos>Customer Service Representative</cntpos> <cntaddr> <addrtype>mailing and physical</addrtype>
+<address>
+47914 252nd Street
+</address>
+<pre><code>      &lt;city&gt;Sioux Falls&lt;/city&gt;
+      &lt;state&gt;SD&lt;/state&gt;
+      &lt;postal&gt;57198-0001&lt;/postal&gt;
+      &lt;country&gt;USA&lt;/country&gt;
+    &lt;/cntaddr&gt;
+    &lt;cntvoice&gt;(605) 594-6151&lt;/cntvoice&gt;
+    &lt;cntfax&gt;605/594-6589&lt;/cntfax&gt;
+    &lt;cntemail&gt;<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="caa9bfb9beb9afb8bc8abfb9adb9e4ada5bc">[email&#160;protected]</a>&lt;/cntemail&gt;
+  &lt;/cntinfo&gt;
+&lt;/metc&gt;
+&lt;metstdn&gt;FGDC Content Standard for Digital Geospatial Metadata&lt;/metstdn&gt;
+&lt;metstdv&gt;FGDC-STD-001-1998&lt;/metstdv&gt;
+&lt;mettc&gt;local time&lt;/mettc&gt;</code></pre>
+<p></metainfo> </metadata></p>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>

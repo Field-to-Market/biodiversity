@@ -1,0 +1,88 @@
+---
+title: "NLCD"
+format: gfm
+editor: visual
+editor_options: 
+  chunk_output_type: console
+---
+
+Resources:
+
+-   [this link](https://smalltownbigdata.github.io/feb2021-landcover/feb2021-landcover.html)
+-   [this link](https://gatesdupontvignettes.com/2019/06/16/nlcd-velox-dplyr.html)
+-   and [this link](https://jakubnowosad.com/posts/2022-02-17-lsm-bp3/#reading-the-data)
+
+```{r}
+library(tidyverse)
+library(landscapemetrics)     # landscape metrics calculation
+library(raster)               # spatial raster data reading and handling
+library(sf)                   # spatial vector data reading and handling
+library(tmap)                 # spatial viz
+library(geofacet)             # geofacet
+
+adams <- raster("data/NLCD_landcover/nlcd.tif") 
+
+my_grid_geom <- st_make_grid(st_as_sfc(st_bbox(adams)), cellsize = 1000)
+
+my_grid_template <- st_sf(geom = my_grid_geom)
+
+my_grid_template$plot_id <- seq_len(nrow(my_grid_template))
+
+plot(adams)
+plot(st_geometry(my_grid_template), add = TRUE)
+
+my_metric1 <- sample_lsm(adams, my_grid_template,
+                       level = "class", metric = "ai")
+my_metric1
+```
+
+```{r}
+my_grid1 <- left_join(my_grid_template, my_metric1, by = "plot_id")
+
+my_grid1_class1 <- subset(my_grid1, class == 82)
+
+plot(my_grid1_class1["value"])
+
+tm_shape(my_grid1) +
+  tm_polygons("value", style = "cont", title = "ai") +
+  tm_facets(by = "class", free.coords = FALSE)
+
+grd <- grid_auto(my_grid_template, names = "plot_id")
+
+ggplot(my_grid1, aes(as.factor(class), value, fill = as.factor(class))) +
+  geom_col() +
+  facet_geo(~plot_id, grid = grd) +
+  labs(x = NULL, y = "ai", fill = "Class") +
+  theme(axis.text.x = element_blank(),
+        axis.ticks.x = element_blank(),
+        strip.background = element_blank(),
+        strip.text.x = element_blank())
+
+my_metric2 <- sample_lsm(adams, my_grid_template,
+                       level = "patch", metric = "enn")
+my_metric2
+
+my_grid2 <- left_join(my_grid_template, my_metric2, by = "plot_id")
+
+my_metric_r_all <- spatialize_lsm(adams, level = "patch", metric = "enn")
+
+plot(my_metric_r_all$layer_1$lsm_p_enn)
+
+patch_raster <- function(adams, my_grid){
+  result = vector(mode = "list", length = nrow(my_grid))
+  for (i in seq_len(nrow(my_grid))){
+    my_small_raster = crop(adams, my_grid[i, ])
+    result[[i]] = spatialize_lsm(my_small_raster,
+                                 level = "patch", metric = "enn")
+  }
+  return(result)
+}
+
+my_metric_r <- patch_raster(adams, my_grid_template)
+my_metric_r <- unlist(my_metric_r)
+names(my_metric_r) = NULL
+my_metric_r <- do.call(merge, my_metric_r)
+
+plot(my_metric_r)
+plot(st_geometry(my_grid_template), add = TRUE)
+```
