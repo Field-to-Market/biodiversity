@@ -1,6 +1,7 @@
 ---
 title: "Biodiversity Metrics in Ag Landscapes"
 format: gfm
+output-file: README.md
 editor: visual
 editor_options: 
   chunk_output_type: console
