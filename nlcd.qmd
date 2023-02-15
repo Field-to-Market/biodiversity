@@ -4,6 +4,9 @@ format: gfm
 editor: visual
 editor_options: 
   chunk_output_type: console
+execute: 
+  message: false
+  warning: false
 ---
 
 ```{r}
@@ -17,8 +20,11 @@ library(geofacet)             # geofacet
 wash <- raster("data/landcover_wa.tiff") 
 iowa <- raster("data/landcover_ia.tiff") 
 georgia <- raster("data/landcover_ga.tiff") 
-kansas <- raster("data/landcover_ks.tiff") 
+kansas <- raster("data/landcover_ks.tiff")
+```
 
+```{r}
+#| fig-height: 8
 par(mfrow = c(2,2))
 plot(wash)
 title("WA")
