@@ -49,7 +49,7 @@ $$SHDI = − \sum_{i = 1}^m ​P_i​ \times\ \ln(P_i​)$$
 where $P_i$ is the proportion of class $i$, and $m$ is the number of classes.
 
 ```{r}
-#| tbl-cap: Shannon's diversity index
+#| tbl-cap: Table 1 Shannon's diversity index
 map(c(wash, kansas, georgia, iowa), lsm_l_shdi) |> 
   list_rbind() |> 
   mutate(farm = c("wash", "kansas", "georgia", "iowa")) |> 
@@ -65,7 +65,7 @@ $$SHEI = \frac{− \sum \limits_{i = 1}^m ​P_i​ \times\ \ln(P_i​)}{\ln(m)}
 where $P_i$ is the proportion of class $i$, and $m$ is the number of classes.
 
 ```{r}
-#| tbl-cap: Shannon's evenness index
+#| tbl-cap: Table 2 Shannon's evenness index
 map(c(wash, kansas, georgia, iowa), lsm_l_shei) |> 
   list_rbind() |> 
   mutate(farm = c("wash", "kansas", "georgia", "iowa")) |> 
@@ -79,7 +79,7 @@ SIDI is a 'Diversity metric'. It is widely used in biodiversity and ecology. It 
 $$SIDI = 1 − \sum_{i = 1}^m ​P_i^2$$
 
 ```{r}
-#| tbl-cap: Simpson's diversity index
+#| tbl-cap: Table 3 Simpson's diversity index
 map(c(wash, kansas, georgia, iowa), lsm_l_sidi) |> 
   list_rbind() |> 
   mutate(farm = c("wash", "kansas", "georgia", "iowa")) |> 

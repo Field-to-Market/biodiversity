@@ -60,7 +60,7 @@ map(c(wash, kansas, georgia, iowa), lsm_l_shdi) |>
 |     1 | landscape |    NA |  NA | shdi   |  1.91 | georgia |
 |     1 | landscape |    NA |  NA | shdi   |  0.88 | iowa    |
 
-Shannon’s diversity index
+Table 1 Shannon’s diversity index
 
 ## Shannon’s evenness index
 
@@ -87,7 +87,7 @@ map(c(wash, kansas, georgia, iowa), lsm_l_shei) |>
 |     1 | landscape |    NA |  NA | shei   |  0.70 | georgia |
 |     1 | landscape |    NA |  NA | shei   |  0.34 | iowa    |
 
-Shannon’s evenness index
+Table 2 Shannon’s evenness index
 
 ## Simpson’s diversity index
 
@@ -112,7 +112,7 @@ map(c(wash, kansas, georgia, iowa), lsm_l_sidi) |>
 |     1 | landscape |    NA |  NA | sidi   |  0.80 | georgia |
 |     1 | landscape |    NA |  NA | sidi   |  0.40 | iowa    |
 
-Simpson’s diversity index
+Table 3 Simpson’s diversity index
 
 ### References
 
