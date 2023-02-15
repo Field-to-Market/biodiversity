@@ -13,9 +13,9 @@ execute:
 
 ```{r}
 library(tidyverse)
-library(landscapemetrics)     # landscape metrics calculation
-library(raster)               # spatial raster data reading and handling
-library(gt)
+library(landscapemetrics) # landscape metrics calculation
+library(raster)           # spatial raster data reading and handling
+library(knitr)            # markdown tables
 
 wash <- raster("data/landcover_wa.tiff") 
 iowa <- raster("data/landcover_ia.tiff") 
@@ -27,6 +27,7 @@ Let's look at the four farms in this example.
 
 ```{r}
 #| fig-height: 8
+#| code-fold: true
 par(mfrow = c(2,2))
 plot(wash)
 title("WA")
@@ -51,7 +52,7 @@ where $P_i$ is the proportion of class $i$, and $m$ is the number of classes.
 map(c(wash, kansas, georgia, iowa), lsm_l_shdi) |> 
   list_rbind() |> 
   mutate(farm = c("wash", "kansas", "georgia", "iowa")) |> 
-  gt()
+  kable(digits = 2)
 ```
 
 ## Shannon's evenness index
@@ -67,7 +68,7 @@ where $P_i$ is the proportion of class $i$, and $m$ is the number of classes.
 map(c(wash, kansas, georgia, iowa), lsm_l_shei) |> 
   list_rbind() |> 
   mutate(farm = c("wash", "kansas", "georgia", "iowa")) |> 
-  gt()
+  kable(digits = 2)
 ```
 
 ## Simpson's diversity index
@@ -81,7 +82,7 @@ $$SIDI = 1 − \sum_{i = 1}^m ​P_i^2$$
 map(c(wash, kansas, georgia, iowa), lsm_l_sidi) |> 
   list_rbind() |> 
   mutate(farm = c("wash", "kansas", "georgia", "iowa")) |> 
-  gt()
+  kable(digits = 2)
 ```
 
 ### References
