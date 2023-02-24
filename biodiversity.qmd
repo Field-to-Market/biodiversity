@@ -10,7 +10,73 @@ execute:
   warning: false
 ---
 
-## Import National Landcover Data (NLCD)
+The Semi-Natural Habitat (SNH) composite score is
+
+$$SNH = (CP + Veg) \times{(1 + SizeRatio) + Configuration + Management}$$
+
+where\
+$CP$ = Conservation practice base score,\
+$Veg$ = Vegetative diversity score
+
+therefore, the proposed biodiversity metric would be
+
+$$
+New\ Metric = (SNH + CoverCrops + Tillage) \times{LC} + PM + Rotation - Conversion
+$$
+
+where\
+LC = Landscape Complexity score ([Examples of landscape complexity calculations])\
+PM = Pest Management score
+
+To explore the point values and the calculations under different farming scenarios, please explore these spreadsheets and the accompanying sensitivity analysis:
+
+-   [Scenario 1](scenario/scenario-01.xlsx)
+
+-   [Scenario 2](scenario/scenario-02.xlsx)
+
+-   [Scenario 3](scenario/scenario-03.xlsx)
+
+## Comments from reviewers
+
+> Overall I must applaud your team on the shift in focus from the previous document. It is very impressive and I believe a much more robust framework. However it does open up some doors that are complicated to walk through and some that are very difficult to close.
+
+> Could we call it Biodiversity Potential Index or Conservation Potential Index?
+>
+> I would advise moving away from the term Habitat. Your focus is on Biodiversity and you do not need to invoke 'habitat' to get there.\
+> \
+> Technically there is no such thing as 'wildlife habitat'. There is quail habitat, rabbit habitat, or deer habitat.
+
+> I think your metric should be driven by semi-natural vegetation.
+>
+> The literature is abundantly clear that the amount of non-crop vegetation is what is driving biodiversity in ag landscapes.
+
+> It is only valuable to differentiate between cover types if you are going to assign different values to different cover types. That is a noble endeavor but will present some challenges because different cover types may be more important in different parts of the country.
+
+> Be careful with Rangeland Analysis Platform as it is not as good east of the Mississippi river as it is west of it.
+
+> "edge" is double-edged sword in wildlife biodiversity.
+
+> if grower is operating an hot bed of biodiversity already, then the conservation-friendly actions they take will have a larger impact, depending on what metric is in question. However, if a VERY conservation-friendly farmers is operating in an extremely bio-hostile landsdape, then their actions will have considerably less impact on the landscape. ... In other words the landscape context DOES matter, and I support quantifying it, BUT how that information is used \[in the calculation\] is unclear.
+
+## Concerns and questions for reviewers
+
+-   This metrics revision still does not capture the value of the habitat creation from a flooded rice field
+-   What can be categorized as a cover crop?
+    -   Could we consider using months of a ***living/rooted*** land cover and months/quality of a ***residue*** cover
+-   Does this revision represent an overall improvement according to the available science
+-   Should we or how would we track temporal changes in the diversity index?
+    -   Farm-by-farm analysis could be more data heavy, so another option is county based reporting with FSA
+-   What should the point values be in each section of the calculation, for different practices?
+-   How should we present a biodiversity result?
+    -   Quantitative (e.g., 0.76, 1.21)
+
+    -   Qualitative (e.g., low, moderate)
+
+## Examples of landscape complexity calculations
+
+We could consider using a landscape complexity score as a sort of multiplier in the overall equation. Here are some examples:
+
+### Import National Landcover Data (NLCD)
 
 ```{r}
 library(tidyverse)
