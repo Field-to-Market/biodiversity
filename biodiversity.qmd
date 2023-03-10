@@ -72,6 +72,84 @@ To explore the point values and the calculations under different farming scenari
 
     -   Qualitative (e.g., low, moderate)
 
+## Questions to be weighed by committee
+
+### **Scope questions**
+
+(relating to major departures from the previous metric)
+
+-   Does the Committee agree on the need to emphasize the value of non-cropland, semi-natural habitat (SNH)?
+
+    -   edge of field practices, adjacent uncropped land, in-field (ephemeral) wetland habitat, etc.
+
+-   Does the Committee want to include landscape complexity as a weighting factor for habitat-provisioning practices (SNH, cover crops, residue, etc.)?
+
+    -   Landscape complexity is largely out of the growers' operational control (like soil types in the erosion and GHG metrics), *but* may introduce more accuracy into the metric.
+
+-   Does the Committee agree on the need to provide greater weight for pest management and increase the granularity of questions?
+
+-   How should the metric results be presented to the use?
+
+    -   0-100%
+
+    -   0 to number less than 100%
+
+    -   poor/moderate/high quality
+
+    -   etc.?
+
+### **Implementation questions**
+
+(relating to point values and question design)
+
+-   Landscape complexity
+
+    -   Shannon vs. Simpson diversity index?
+
+    -   What is landscape-scale?
+
+        -   1km around the field, 5km around the field?
+
+        -   From the center of the field or from field borders?
+
+-   Cover crops
+
+    -   Are the point values correct?
+
+        -   Is there sufficient research to support these values?
+
+    -   Do winter wheat and alfalfa receive the same point values?
+
+-   Point values of:
+
+    -   SNH base practices
+
+    -   Vegetative diversity
+
+        -   Can users reliably differentiate between cover types?
+
+    -   Management
+
+        -   Does asking about management of semi-natural vegetation lead to double counting in the vegetative diversity question, since the purpose of the management is often to maintain stand diversity and vigor?
+
+        -   What is the appropriate timeline for considering management (in current year, in past three years, in past five years)?
+
+-   Pest management
+
+    -   Are these the right BMPs and point values?
+
+    -   How does a user respond to this question if they perform multiple crop protectant applications, i.e. proactive scouting for an mid-season application, but not an early-season application?
+
+-   Cropland conversion
+
+    -   Can NLCD reliably detect land use change? Would other land cover maps be better fit for purpose?
+
+-   Crop rotation
+
+    -   How should the crop rotation question look at alfalfa (or other perennials available in the rotation builder)? What about (chem) fallow years?
+
+------------------------------------------------------------------------
+
 ## Examples of landscape complexity calculations
 
 We could consider using a landscape complexity score as a sort of multiplier in the overall equation. Here are some examples:
